@@ -7,3 +7,4 @@ else
   rabbitmqctl join_cluster --ram rabbit@$CLUSTER_WITH
 fi
 rabbitmqctl start_app
+tail -f /var/log/rabbitmq/rabbit*log

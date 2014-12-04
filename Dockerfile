@@ -7,4 +7,6 @@ ADD rabbitmq-start /usr/local/bin/
 ADD rabbitmq-cluster /usr/local/bin/
 ADD conf.d/ /etc/supevisor/conf.d/
 
-CMD /usr/bin/supervisord
+ADD run.sh /run.sh
+
+CMD /run.sh
